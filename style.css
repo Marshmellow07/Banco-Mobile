@@ -1,0 +1,237 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #424242, #494949);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* iPhone */
+.iphone {
+  width: 390px;
+  height: 844px;
+  background: #1b1b1b;
+  border-radius: 50px;
+  padding: 7px;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 255, 136, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iphone:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 80px rgba(0, 255, 136, 0.4);
+}
+
+/* Notch */
+.notch {
+  width: 120px;
+  height: 23px;
+  background: #000;
+  border-radius: 30px;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Botões laterais */
+.power-button, .volume-buttons {
+  position: absolute;
+  width: 7px;
+  background: #202020;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.power-button {
+  right: -3px;
+  top: 180px;
+  height: 50px;
+}
+
+.volume-buttons {
+  left: -3px;
+  top: 150px;
+  height: 100px;
+}
+
+.power-button:hover, .volume-buttons:hover {
+  background: #00ff88;
+}
+
+/* Barra de status */
+.status-bar {
+  position: absolute;
+  top: 14px;
+  left: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #aaa;
+  z-index: 15;
+}
+
+.status-bar .icons i {
+  margin-left: 6px;
+}
+
+/* Tela do app */
+.screen {
+  background: linear-gradient(145deg, #3a3a3a, #141614);
+  width: 100%;
+  height: 100%;
+  border-radius: 45px;
+  padding: 2rem 1.4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 30px rgba(0, 255, 136, 0.08);
+  padding-bottom: 1.2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.screen:hover {
+  box-shadow: inset 0 0 50px rgba(0, 255, 136, 0.2);
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-top: 90px;
+  transition: all 0.3s ease;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+header h2 {
+  font-size: 2.6rem;
+  margin-top: 0.8rem;
+  color: #00ff88;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.25);
+}
+
+/* Atalhos / cards */
+.atalhos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 255, 136, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: rgba(0, 255, 136, 0.08);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.25);
+}
+
+.card i {
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+  color: #00ff88;
+  transition: all 0.3s ease;
+}
+
+.card i:hover {
+  color: #ffffff;
+}
+
+.card span {
+  display: block;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.card:hover span {
+  color: #ffffff;
+}
+
+/* Footer/nav */
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+footer nav:hover {
+  transform: scale(1.05);
+}
+
+footer a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #00ff88;
+  transform: scale(1.1);
+}
+
+footer i {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Home indicator */
+.home-indicator {
+  width: 120px;
+  height: 5px;
+  background: #444;
+  border-radius: 3px;
+  margin: 25px auto 0 auto;
+  transition: all 0.3s ease;
+}
+
+.home-indicator:hover {
+  background: #00ff88;
+}
