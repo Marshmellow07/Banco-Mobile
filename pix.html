@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>App Banco</title>
+  <title>Pix</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -23,34 +23,35 @@
     <div class="volume-buttons"></div>
 
     <div class="screen">
+      <!-- Seta de voltar -->
+      <a href="index.html" class="back-button" style="position: absolute; top: 30px; left: 20px; color: white; font-size: 1.5rem;">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+
       <header>
-        <h1>Olá, Gabriel</h1>
-        <p>Seu saldo disponível é:</p>
-        <h2>R$ 2.500,00</h2>
+        <h1>Área Pix</h1>
+        <p>Escolha uma opção:</p>
       </header>
 
       <div class="atalhos">
-        <a href="pix.html" class="card">
-          <i class="fas fa-money-bill-wave"></i>
-          <span>Pix</span>
+        <!-- Abre nova aba corretamente -->
+        <a href="chaves.html" target="_blank" class="card">
+          <i class="fas fa-key"></i>
+          <span>Minhas chaves</span>
         </a>
         <div class="card">
-          <i class="fas fa-barcode"></i>
-          <span>Boleto</span>
-        </div>
-        <div class="card">
           <i class="fas fa-arrow-up"></i>
-          <span>Enviar</span>
+          <span>Enviar Pix</span>
         </div>
         <div class="card">
           <i class="fas fa-arrow-down"></i>
-          <span>Receber</span>
+          <span>Receber Pix</span>
         </div>
       </div>
 
       <footer>
         <nav>
-          <a href="#"><i class="fas fa-home"></i>Início</a>
+          <a href="index.html"><i class="fas fa-home"></i>Início</a>
           <a href="#"><i class="fas fa-credit-card"></i>Cartões</a>
           <a href="#"><i class="fas fa-cog"></i>Config.</a>
         </nav>

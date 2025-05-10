@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minhas Chaves Pix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .voltar-seta {
+      position: absolute;
+      top: 65px;
+      left: 20px;
+      font-size: 1.5rem;
+      color: #ccc;
+      text-decoration: none;
+      z-index: 20;
+      transition: color 0.3s ease;
+    }
+
+    .voltar-seta:hover {
+      color: #00ff88;
+    }
+
+    .lista-chaves {
+      margin-top: 140px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .chave {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      padding: 1rem;
+      color: #e0e0e0;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0, 255, 136, 0.04);
+    }
+
+    .chave strong {
+      color: #00ff88;
+      font-size: 0.95rem;
+    }
+
+    .chave p {
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone">
+    <div class="notch"></div>
+    <div class="status-bar">
+      <span>9:41</span>
+      <div class="icons">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <div class="power-button"></div>
+    <div class="volume-buttons"></div>
+
+    <div class="screen">
+      <!-- Seta para voltar -->
+      <a href="pix.html" class="voltar-seta"><i class="fas fa-arrow-left"></i></a>
+
+      <header>
+        <h1>Minhas Chaves</h1>
+        <p>Gerencie suas chaves Pix</p>
+      </header>
+
+      <div class="lista-chaves">
+        <div class="chave">
+          <strong>CPF</strong>
+          <p>123.456.789-00</p>
+        </div>
+        <div class="chave">
+          <strong>E-mail</strong>
+          <p>gabriel@email.com</p>
+        </div>
+        <div class="chave">
+          <strong>Telefone</strong>
+          <p>(11) 91234-5678</p>
+        </div>
+        <div class="chave">
+          <strong>Chave Aleatória</strong>
+          <p>e4a9-92b4-44c7-b122-a3c230e6a01f</p>
+        </div>
+      </div>
+
+      <footer>
+        <nav>
+          <a href="index.html"><i class="fas fa-home"></i>Início</a>
+          <a href="#"><i class="fas fa-credit-card"></i>Cartões</a>
+          <a href="#"><i class="fas fa-cog"></i>Config.</a>
+        </nav>
+        <div class="home-indicator"></div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
